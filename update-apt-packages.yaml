@@ -6,8 +6,8 @@
   tasks:
     - name: update apt packages
       apt:
-        update_cache: yes
         upgrade: yes
+        update_cache: yes
         
     - name: Check if reboot required
       stat:
